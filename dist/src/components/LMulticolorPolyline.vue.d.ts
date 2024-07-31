@@ -3,6 +3,9 @@ import type L from "leaflet";
  * Polyline component, lets you add and personalize polylines on the map
  */
 declare const _sfc_main: import("vue").DefineComponent<{
+    readonly offset: {
+        readonly type: NumberConstructor;
+    };
     readonly smoothFactor: {
         readonly type: NumberConstructor;
     };
@@ -92,6 +95,9 @@ declare const _sfc_main: import("vue").DefineComponent<{
     ready: import("vue").Ref<boolean>;
     leafletObject: import("vue").Ref<L.Polyline<import("geojson").LineString | import("geojson").MultiLineString, any> | undefined>;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+    readonly offset: {
+        readonly type: NumberConstructor;
+    };
     readonly smoothFactor: {
         readonly type: NumberConstructor;
     };

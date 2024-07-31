@@ -7,6 +7,9 @@ import { pathProps, setupPath } from "./path";
 
 export const multicolorPolylineProps = {
   ...pathProps,
+  offset: {
+    type: Number,
+  },
   smoothFactor: {
     type: Number,
   },
@@ -33,7 +36,7 @@ export const setupMulticolorPolyline = (props, leafletRef, context) => {
     multicolorPolylineProps,
     pathOptions
   );
-
+  console.log(options)
   const methods = {
     ...pathMethods,
     setSmoothFactor(smoothFactor) {

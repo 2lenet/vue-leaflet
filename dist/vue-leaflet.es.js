@@ -1574,6 +1574,9 @@ const kt = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   }
 }), lt = {
   ...te,
+  offset: {
+    type: Number
+  },
   smoothFactor: {
     type: Number
   },
@@ -1595,7 +1598,9 @@ const kt = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
     t,
     lt,
     n
-  ), l = {
+  );
+  console.log(r);
+  const l = {
     ...a,
     setSmoothFactor(s) {
       o.value.setStyle({ smoothFactor: s });

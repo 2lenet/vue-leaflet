@@ -1,6 +1,9 @@
 import type L from "leaflet";
 import type { PropType } from "vue";
 export declare const multicolorPolylineProps: {
+    readonly offset: {
+        readonly type: NumberConstructor;
+    };
     readonly smoothFactor: {
         readonly type: NumberConstructor;
     };
